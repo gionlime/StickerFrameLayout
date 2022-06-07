@@ -22,7 +22,7 @@ import com.zhouyou.sticker.utils.PointUtils;
  * 作者：ZhouYou
  * 日期：2016/12/2.
  */
-public class StickerView extends ImageView {
+public class StickerView extends androidx.appcompat.widget.AppCompatImageView {
 
     private Context context;
     // 被操作的贴纸对象
@@ -83,8 +83,9 @@ public class StickerView extends ImageView {
         zoomIcon = new StickerActionIcon(context);
         removeIcon = new StickerActionIcon(context);
         paintEdge = new Paint();
-        paintEdge.setColor(Color.BLACK);
+        paintEdge.setColor(Color.WHITE);
         paintEdge.setAlpha(170);
+        paintEdge.setStrokeWidth(5f);
         paintEdge.setAntiAlias(true);
     }
 
